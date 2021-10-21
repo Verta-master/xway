@@ -1,0 +1,37 @@
+.header {
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 200px;
+}
+.header__langs {
+  padding-left: 30px;
+}
+.header__block {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__phone {
+  font-size: 24px;
+}
+.header__lang {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.header__phone,
+.header__lang {
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: @green;
+    .transition();
+  }
+}

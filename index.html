@@ -5,7 +5,9 @@
   <meta name="robots" content="noindex">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>XWay</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.min.css">
@@ -32,12 +34,12 @@
         <div class="promo__wrap">
           <div class="promo__info">
             <p class="promo__title">Разместим ваши товары на <span>Яндекс.Маркет</span></p>
-            <p>Сервис для продажи товаров на крупных маркетплейсах</p>
+            <p class="promo__subtitle">Сервис для продажи товаров на крупных маркетплейсах</p>
             <div class="promo__btns">
               <a href="#" class="btn promo__btn">Получить предложение</a>
               <a href="#" class="btn btn--white btn--price">Узнать прайс</a>
             </div>
-            <p>Создание и сопровождение магазина на <strong>Ozon</strong> и <strong>Яндекс.Маркет</strong></p>
+            <p class="promo__comment">Создание и сопровождение магазина на <strong>Ozon</strong> и <strong>Яндекс.Маркет</strong><span>БЕСПЛАТНО</span><a data-fancybox data-src="#call" href="javascript:;" class="promo__popup"></a></p>
           </div>
           <figure class="promo__img">
             <img src="img/images/promo.webp" alt="promo">
@@ -214,94 +216,109 @@
       <div class="wrapper">
         <h2>Совершенная технологическая платформа для управления продажами на маркетплейсах</h2>
         <p class="subtitle">Работаем на уровне, недостижимом для конкурентов</p>
-        <figure class="platform__img">
-          <img src="img/images/photo.svg" alt="Совершенная технологическая платформа">
-        </figure>
-        <ul class="platform__list">
-          <li class="platform__item">
-            <a href="#" class="platform__link">
-              <p class="title-3">Product Information Management</p>
-              <p>Создание текстового, фото и видео контента, импорт и управление контентом</p>
-            </a>
-            <div class="platform__modal">
-              <p class="platform__top">Product Information Management</p>
-              <p class="platform__name">PIM</p>
-              <p><i>Экспорт, импорт, хранение, обогащение и управление контентом</i></p>
-              <ul>
-                <li>Возможность в режиме одного окна загружать товарный каталог с контентом;</li>
-                <li>Система преобразует информационную модель под любые маркетплейсы и дает возможность работы по API с площадками: AliExpress, Ozon, Яндекс Маркет, Wildberries, СберМегаМаркет, M-Video, в том числе глобальные — e-Bay, Amazon, Mercado Libra и др.;</li>
-                <li>Отдельный важный компонент PIM — система для создания текстового, фото и видео контента под ключ в объемах десятков тысяч карточек товара в месяц. У команды XWAY уникальная экспертиза в этой области.</li>
-              </ul>
-            </div>
-          </li>
-          <li class="platform__item">
-            <a href="#" class="platform__link">
-              <p class="title-3">Merchant Management System</p>
-              <p>Заведение и управлние селлерами, логистикой, другими партнерами</p>
-            </a>
-            <div class="platform__modal">
-              <p class="platform__top">Merchant Management System</p>
-              <p class="platform__name">MMS</p>
-              <p>Система для запуска и управления маркетплейсами.</p>
-              <ul>
-                <li>Заведение и управление селлерами, логистикой, другими партнерами;</li>
-                <li>Личный кабинет маркетплейса.</li>
-              </ul>
-            </div>
-          </li>
-          <li class="platform__item">
-            <a href="#" class="platform__link">
-              <p class="title-3">Online Retail Monitoring</p>
-              <p>Система мониторинга и аналитика карточек товара, контента, цен и промоакций.</p>
-            </a>
-            <div class="platform__modal">
-              <p class="platform__top">Online Retail Monitoring</p>
-              <p class="platform__name">ORM</p>
-              <p><i>Система мониторинга и анализа карточек товара, контента, цен и промоакций.</i></p>
-              <p>Регулярный сбор информации о контенте по ключевым значениям:</p>
-              <ul>
-                <li>Мониторинг цен;</li>
-                <li>Мониторинг скидок и акций;</li>
-                <li>Мониторинг конкурентов;</li>
-                <li>Мониторинг рейтингов, обзоров и репутации;</li>
-                <li>Сводная информация по товарам на всех площадках;</li>
-                <li>Выгрузка данных в Личный кабинет ритейлера;</li>
-                <li>API для интеграции с CRM;</li>
-                <li>Кастомизация отчетов по требованию.</li>
-              </ul>
-              <p><b>Торговые роботы </b><span>(скоро!)</span> — система автоматизации ценообразования в зависимости от цен конкурентов, цен на товар в разных маркетплейсах, цен на товары-аналоги. При работе учитываются:</p>
-              <u>
-                <li>динамика изменения цен;</li>
-                <li>мониторинг акций и промо;</li>
-                <li>информация о ценах и предоставлении скидок конкурентами;</li>
-                <li>цены товаров-аналогов.</li>
-              </u>
-            </div>
-          </li>
-          <li class="platform__item">
-            <a href="#" class="platform__link">
-              <p class="title-3">Order Management System</p>
-              <p>Система отслеживания заказов, статус заказов, анализ и коммуникация с логистикой</p>
-            </a>
-            <div class="platform__modal">
-              <p class="platform__top">Order Management System</p>
-              <p class="platform__name">OMS</p>
-              <p><i>Система управления заказами, отслеживания заказов, трансляции статуса заказовов, анализа и информирования.</i></p>
-              <ul>
-                <li>Система показывает объемы заказов, скорость их обработки, в штуках, в сумме, по различным маркетплейсам в динамике;</li>
-                <li>Аналитика предоставляется в виде сводных таблиц – товары по категориям, товары по брендам, заказы по маркетплейсам и др.</li>
-              </ul>
-              <p><b>Отдельный компонент системы – Price-list management system</b></p>
-              <p><i>озволяет создавать и импортировать торговые предложения из различных источников.</i></p>
-              <ul>
-                <li>Дает возможность связывать предложения с соответствующими товарами;</li>
-                <li>Транслировать торговые предложения в различные маркетплейсы;</li>
-                <li>При формировании предложения система учитывает данные о складских остатках, цены и акции;</li>
-                <li>Дает возможность настраивать логику предложений — цены, акции, скидки и др.</li>
-              </ul>
-            </div>
-          </li>
-        </ul>
+        <div class="platform__wrap">
+          <figure class="platform__img">
+            <img src="img/images/photo.svg" alt="Совершенная технологическая платформа">
+          </figure>
+          <div class="platform__center">
+            <p class="platform__title">MMP</p>
+            <p class="platform__subtitle">Marketplace Management Platform</p>
+            <p>Платформа Управления Маркетплейсом</p>
+          </div>
+          <ul class="platform__list">
+            <li class="platform__item">
+              <a data-fancybox data-src="#platform1" href="javascript:;" class="platform__link">
+                <div class="platform__text">
+                  <p class="title-3">Product Information Management</p>
+                  <p>Создание текстового, фото и видео контента, импорт и управление контентом</p>
+                </div>
+              </a>
+              <div style="display: none;" id="platform1" class="platform__modal">
+                <p class="platform__top">Product Information Management</p>
+                <p class="platform__name">PIM</p>
+                <p><i>Экспорт, импорт, хранение, обогащение и управление контентом</i></p>
+                <ul>
+                  <li>Возможность в режиме одного окна загружать товарный каталог с контентом;</li>
+                  <li>Система преобразует информационную модель под любые маркетплейсы и дает возможность работы по API с площадками: AliExpress, Ozon, Яндекс Маркет, Wildberries, СберМегаМаркет, M-Video, в том числе глобальные — e-Bay, Amazon, Mercado Libra и др.;</li>
+                  <li>Отдельный важный компонент PIM — система для создания текстового, фото и видео контента под ключ в объемах десятков тысяч карточек товара в месяц. У команды XWAY уникальная экспертиза в этой области.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="platform__item">
+              <a data-fancybox data-src="#platform2" href="javascript:;" class="platform__link">
+                <div class="platform__text">
+                  <p class="title-3">Merchant Management System</p>
+                  <p>Заведение и управлние селлерами, логистикой, другими партнерами</p>
+                </div>
+              </a>
+              <div style="display: none;" id="platform2" class="platform__modal">
+                <p class="platform__top">Merchant Management System</p>
+                <p class="platform__name">MMS</p>
+                <p>Система для запуска и управления маркетплейсами.</p>
+                <ul>
+                  <li>Заведение и управление селлерами, логистикой, другими партнерами;</li>
+                  <li>Личный кабинет маркетплейса.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="platform__item">
+              <a data-fancybox data-src="#platform3" href="javascript:;" class="platform__link">
+                <div class="platform__text">
+                  <p class="title-3">Online Retail Monitoring</p>
+                  <p>Система мониторинга и аналитика карточек товара, контента, цен и промоакций.</p>
+                </div>
+              </a>
+              <div style="display: none;" id="platform3" class="platform__modal">
+                <p class="platform__top">Online Retail Monitoring</p>
+                <p class="platform__name">ORM</p>
+                <p><i>Система мониторинга и анализа карточек товара, контента, цен и промоакций.</i></p>
+                <p>Регулярный сбор информации о контенте по ключевым значениям:</p>
+                <ul>
+                  <li>Мониторинг цен;</li>
+                  <li>Мониторинг скидок и акций;</li>
+                  <li>Мониторинг конкурентов;</li>
+                  <li>Мониторинг рейтингов, обзоров и репутации;</li>
+                  <li>Сводная информация по товарам на всех площадках;</li>
+                  <li>Выгрузка данных в Личный кабинет ритейлера;</li>
+                  <li>API для интеграции с CRM;</li>
+                  <li>Кастомизация отчетов по требованию.</li>
+                </ul>
+                <p><strong>Торговые роботы </strong><span>(<strong>скоро!</strong>)</span> — система автоматизации ценообразования в зависимости от цен конкурентов, цен на товар в разных маркетплейсах, цен на товары-аналоги. При работе учитываются:</p>
+                <ul>
+                  <li>динамика изменения цен;</li>
+                  <li>мониторинг акций и промо;</li>
+                  <li>информация о ценах и предоставлении скидок конкурентами;</li>
+                  <li>цены товаров-аналогов.</li>
+                </ul>
+              </div>
+            </li>
+            <li class="platform__item">
+              <a data-fancybox data-src="#platform4" href="javascript:;" class="platform__link">
+                <div class="platform__text">
+                  <p class="title-3">Order Management System</p>
+                  <p>Система отслеживания заказов, статус заказов, анализ и коммуникация с логистикой</p>
+                </div>
+              </a>
+              <div style="display: none;" id="platform4" class="platform__modal">
+                <p class="platform__top">Order Management System</p>
+                <p class="platform__name">OMS</p>
+                <p><i>Система управления заказами, отслеживания заказов, трансляции статуса заказовов, анализа и информирования.</i></p>
+                <ul>
+                  <li>Система показывает объемы заказов, скорость их обработки, в штуках, в сумме, по различным маркетплейсам в динамике;</li>
+                  <li>Аналитика предоставляется в виде сводных таблиц – товары по категориям, товары по брендам, заказы по маркетплейсам и др.</li>
+                </ul>
+                <p><strong>Отдельный компонент системы – Price-list management system</strong></p>
+                <p><i>Позволяет создавать и импортировать торговые предложения из различных источников.</i></p>
+                <ul>
+                  <li>Дает возможность связывать предложения с соответствующими товарами;</li>
+                  <li>Транслировать торговые предложения в различные маркетплейсы;</li>
+                  <li>При формировании предложения система учитывает данные о складских остатках, цены и акции;</li>
+                  <li>Дает возможность настраивать логику предложений — цены, акции, скидки и др.</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     
@@ -388,7 +405,7 @@
           </li>
           <li class="service__item">
             <figure class="service__icon">
-              <img src="img/icons/icon-1.svg" alt="Услуги">
+              <img src="img/icons/icon-7.svg" alt="Услуги">
             </figure>
             <div class="service__info">
               <p class="title-3">Собственный контакт-центр</p>
@@ -402,7 +419,7 @@
           </li>
           <li class="service__item">
             <figure class="service__icon">
-              <img src="img/icons/icon-1.svg" alt="Услуги">
+              <img src="img/icons/icon-8.svg" alt="Услуги">
             </figure>
             <div class="service__info">
               <p class="title-3">Проведение стримов</p>
@@ -640,6 +657,30 @@
       </div>
     </div>
   </footer>
+  
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="title-2">Условия:</p>
+    <p class="title-3">Яндекс.Маркет:</p>
+    <p>Бесплатное создание и запуск магазина, бесплатное сопровождение до 31.01.2022 года, далее — 2-4% в месяц от оборота магазина</p>
+    <p class="title-3">Ozon:</p>
+    <p>Бесплатное создание и запуск магазина, бесплатное сопровождение в течение 10 месяцев после первой продажи, далее — 2-4% в месяц от оборота магазина</p>
+    <p class="title-3">Перечень выполняемых работ на этапе создания магазина (Ozon, Яндекс.Маркет):</p>
+    <ul>
+      <li>загрузка карточек товара (до 400 шт);</li>
+      <li>настройка личного кабинета;</li>
+      <li>консультации по работе с личным кабинетом;</li>
+      <li>консультации по правилам подготовки товаров к отгрузке на платформу</li>
+    </ul>
+    <p class="title-3">Перечень выполняемых работ на этапе сопровождения (Ozon, Яндекс.Маркет):</p>
+    <ul>
+      <li>разработка и проведение промо-мероприятий;</li>
+      <li>работа с контентом (добавление новых карточек товара - до 400, корректировка текущих карточек товара с учетом поисковой оптимизации);</li>
+      <li>внесение изменений в настройки личного кабинета;</li>
+      <li>работа с вопросами и отзывами конечных покупателей;</li>
+      <li>консультации по оптимизации работы с платформой</li>
+    </ul>
+  </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>

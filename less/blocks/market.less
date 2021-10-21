@@ -1,0 +1,28 @@
+.market__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.market__item {
+  width: 25%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  img {
+    filter: grayscale(100%);
+    max-width: 150px;
+    .transition();
+  }
+  
+  &:hover {
+    img {
+      filter: none;
+      .transition();
+    }
+  }
+}
