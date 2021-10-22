@@ -36,8 +36,8 @@
             <p class="promo__title">Разместим ваши товары на <span>Яндекс.Маркет</span></p>
             <p class="promo__subtitle">Сервис для продажи товаров на крупных маркетплейсах</p>
             <div class="promo__btns">
-              <a href="#" class="btn promo__btn">Получить предложение</a>
-              <a href="#" class="btn btn--white btn--price">Узнать прайс</a>
+              <a data-fancybox data-src="#offer" href="javascript:;" class="btn promo__btn">Получить предложение</a>
+              <a href="#" class="btn btn--white promo__price" download>Узнать прайс</a>
             </div>
             <p class="promo__comment">Создание и сопровождение магазина на <strong>Ozon</strong> и <strong>Яндекс.Маркет</strong><span>БЕСПЛАТНО</span><a data-fancybox data-src="#call" href="javascript:;" class="promo__popup"></a></p>
           </div>
@@ -635,12 +635,12 @@
       <div class="footer__block">
         <p class="footer__title">КОМПАНИЯ XWAY</p>
         <div class="footer__address">
-          <a href="#">Россия, г.Москва, 1-й Автозаводский проезд 4к1</a>
+          <a href="https://yandex.ru/maps/-/CCUUNMfT2A" target="_blank">Россия, г.Москва, 1-й Автозаводский проезд 4к1</a>
           <div>ООО "Технологии продаж"</div>
           <div>ООО "ТИСЭЙЛ"</div>
         </div>
         <div class="footer__address">
-          <a href="#">Dimostheni Severi, 12, 6th floor, Flat/Office 601, 1080, Nicosia, Cyprus</a>
+          <a href="https://goo.gl/maps/fRmAaSmPdMShCEmg9" target="_blank">Dimostheni Severi, 12, 6th floor, Flat/Office 601, 1080, Nicosia, Cyprus</a>
           <div>FRIPPERWAY GLOBAL LIMITED</div>
         </div>
       </div>
@@ -658,9 +658,9 @@
     </div>
   </footer>
   
-  <!-- Modal window -->
+  <!-- Modal windows -->
   <div style="display: none;" id="call" class="modal">
-    <p class="title-2">Условия:</p>
+    <p class="modal__title">Условия:</p>
     <p class="title-3">Яндекс.Маркет:</p>
     <p>Бесплатное создание и запуск магазина, бесплатное сопровождение до 31.01.2022 года, далее — 2-4% в месяц от оборота магазина</p>
     <p class="title-3">Ozon:</p>
@@ -680,6 +680,18 @@
       <li>работа с вопросами и отзывами конечных покупателей;</li>
       <li>консультации по оптимизации работы с платформой</li>
     </ul>
+  </div>
+  
+  <div style="display: none;" id="offer" class="modal modal--offer">
+    <p class="modal__title">Получить предложение</p>
+    <form action="#" class="form">
+      <input type="text" id="name" class="form__input" placeholder="Имя">
+      <input type="tel" id="phone" class="form__input" placeholder="+7 (999) 99-99-99">
+      <input type="email" id="email" class="form__input" placeholder="E-mail">
+      <input type="checkbox" id="checkbox" class="form__checkbox">
+      <label for="checkbox" class="form__check">Я согласен с <a href="#">политикой конфиденциальности</a></label>
+      <button type="submit" class="btn form__btn">Получить предложение</button>
+    </form>
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
