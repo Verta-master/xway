@@ -1,3 +1,10 @@
+.market {
+  margin-bottom: 100px;
+  
+  .wrapper {
+    position: relative;
+  }
+}
 .market__list {
   .reset();
   list-style: none;
@@ -25,4 +32,110 @@
       .transition();
     }
   }
+}
+.market__prev,
+.market__next {
+  width: 40px;
+  height: 40px;
+}
+.market__prev {
+  left: ~"calc(50% - 600px)";
+}
+.market__next {
+  right: ~"calc(50% - 600px)";
+}
+.market__slider {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  
+  .swiper-slide-active {
+    opacity: 1;
+  }
+}
+.market__slide {
+  box-sizing: border-box;
+  width: 860px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  opacity: 0.3;
+}
+.market__logo {
+  position: relative;
+  width: 33%;
+  padding: 20px 40px;
+  padding-bottom: 60px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -20px;
+    left: 0;
+    right: -50px;
+    bottom: 50px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+  }
+}
+.market__info {
+  width: 66%;
+  padding: 50px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.market__benefits {
+  .reset();
+  list-style: none;
+}
+.market__point {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.market__icon {
+  width: 60px;
+}
+.market__text {
+  width: ~"calc(100% - 80px)";
+  font-weight: 600;
+}
+.market__number {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 30px;
+}
+.market__title {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.market__about {
+  margin-top: 10px;
+}
+.market__data {
+  margin-top: auto;
+}
+.market__wrap {
+  position: relative;
+  padding-bottom: 54px;
+}
+.swiper-pagination-bullet {
+  opacity: 1;
+  background-color: #c7c7c7;
+}
+.swiper-pagination-bullet-active {
+  background-color: #222;
 }

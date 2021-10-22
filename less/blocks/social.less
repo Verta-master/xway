@@ -1,0 +1,30 @@
+.social {
+  .reset();
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.social__item {
+  margin-right: 4px;
+}
+.social__link {
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  .transition();
+  
+  &--fb {
+    background-image: url(../img/icons/facebook.svg);
+  }
+  &--in {
+    background-image: url(../img/icons/instagram.svg);
+  }
+  
+  &:hover,
+  &:active {
+    opacity: 0.9;
+    .transition();
+  }
+}

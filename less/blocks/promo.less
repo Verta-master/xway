@@ -4,6 +4,7 @@
   color: #170237;
   font-size: 20px;
   line-height: 1.55;
+  overflow: hidden;
 }
 .promo__wrap {
   display: flex;
@@ -35,7 +36,21 @@
   align-items: center;
 }
 .promo__img {
+  position: relative;
   
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(12deg);
+    z-index: -1;
+    width: 730px;
+    height: 536px;
+    background-image: url(../img/images/_1.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
 }
 .promo__btn {
   margin-right: 20px;
