@@ -34,7 +34,7 @@
       <div class="wrapper">
         <div class="promo__wrap">
           <div class="promo__info wow fadeInLeft">
-            <p class="promo__title">Разместим ваши товары на <span>Яндекс.Маркет</span></p>
+            <p class="promo__title">Разместим ваши товары на <span id="#typing"></span></p>
             <p class="promo__subtitle">Сервис для продажи товаров на крупных маркетплейсах</p>
             <div class="promo__btns">
               <a data-fancybox="" data-src="#offer" href="javascript:;" class="btn promo__btn">Получить предложение</a>
@@ -701,6 +701,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
   
   <!-- Sliders -->
   <script>
@@ -758,6 +759,24 @@
   <!-- Animation -->
   <script>
     new WOW().init();
+    
+//    $("#typing").typed({
+//      strings: ["Яндекс.Маркет", "Ozon", "Wildberries"],
+//      typeSpeed: 70,
+//      backDelay: 1500,
+//      startDelay: 2500,
+//      loop: true,
+//      loopCount: 2,
+//      contentType: 'html',      
+//    });
+    
+    var typed = new Typed('.promo__title span', {
+      strings: ["Яндекс.Маркет", "Ozon", "Wildberries"],
+      typeSpeed: 70,
+      loop: true,
+      backDelay: 1500,
+      startDelay: 2500,
+    });
   </script>
 </body>
 </html>
