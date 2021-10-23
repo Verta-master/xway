@@ -118,11 +118,10 @@
     position: relative;
     padding-top: 40px;
   }
-//  .promo__title {
-//    span {
-//      display: block;
-//    }
-//  }
+  .promo__title {
+    overflow: hidden;
+    margin-bottom: 0;
+  }
   .promo__btns {
     display: flex;
   }
@@ -139,9 +138,11 @@
     margin: 0;
     position: absolute;
     bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 500px;
+    left: 0;
+    right: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+//    width: 500px;
   }
   .promo__img::before {
     width: 570px;
@@ -468,9 +469,17 @@
     height: 258px;
   }
   .promo__comment {
-    width: 300px;
+//    width: 300px;
     bottom: 0;
     font-size: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .promo__line {
+    display: block;
+  }
+  .modal {
+    width: 300px;
   }
   .market__item {
     width: 50%;
