@@ -893,10 +893,10 @@ h3,
   background-image: url(../img/images/_5.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  -webkit-animation: 'rotating' 50s infinite linear;
-          animation: 'rotating' 50s infinite linear;
+  -webkit-animation: rotating 50s infinite linear;
+          animation: rotating 50s infinite linear;
 }
-@-webkit-keyframes 'rotating' {
+@-webkit-keyframes rotating {
   0% {
     -webkit-transform: translate(-50%, -50%) rotate(0deg);
             transform: translate(-50%, -50%) rotate(0deg);
@@ -906,7 +906,7 @@ h3,
             transform: translate(-50%, -50%) rotate(360deg);
   }
 }
-@keyframes 'rotating' {
+@keyframes rotating {
   0% {
     -webkit-transform: translate(-50%, -50%) rotate(0deg);
             transform: translate(-50%, -50%) rotate(0deg);
@@ -1786,9 +1786,6 @@ h3,
   .promo {
     position: relative;
     padding-top: 40px;
-  }
-  .promo__title span {
-    display: block;
   }
   .promo__btns {
     display: -webkit-box;
