@@ -758,7 +758,11 @@
   
   <!-- Animation -->
   <script>
-    new WOW().init();
+//    new WOW().init();
+    wow = new WOW({
+      mobile: false,
+    })
+    wow.init();
 
     var typed = new Typed('.promo__title span', {
       strings: ["Яндекс.Маркет", "Ozon", "Wildberries"],
