@@ -132,3 +132,27 @@
   line-height: 1.17;
   font-weight: 600;
 }
+.platform__img {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: block;
+    width: 660px;
+    height: 660px;
+    background-image: url(../img/images/_5.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: 'rotating' 50s infinite linear;
+  }
+}
+@keyframes 'rotating' {
+  0% {
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%,-50%) rotate(360deg);
+  }
+}
