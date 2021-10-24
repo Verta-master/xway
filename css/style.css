@@ -669,7 +669,7 @@ h3,
   z-index: -1;
   width: 730px;
   height: 536px;
-  background-image: url(../img/images/_1.svg);
+  background-image: url(../img/images/1.svg);
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -894,7 +894,7 @@ h3,
   display: block;
   width: 660px;
   height: 660px;
-  background-image: url(../img/images/_5.svg);
+  background-image: url(../img/images/5.svg);
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-animation: rotating 50s infinite linear;
@@ -1400,6 +1400,7 @@ h3,
   transition: ease-out 0.3s;
 }
 .clients {
+  position: relative;
   margin-bottom: 36px;
 }
 .clients__slider {
@@ -1423,14 +1424,15 @@ h3,
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.clients__wrap {
-  position: relative;
-}
 .clients__prev {
-  left: -30px;
+  left: 30px;
 }
 .clients__next {
-  right: -30px;
+  right: 30px;
+}
+.clients__next,
+.clients__prev {
+  margin-top: 30px;
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -1446,6 +1448,13 @@ h3,
 .swiper-button-next::after,
 .swiper-button-prev::after {
   display: none;
+}
+.swiper-button-next:hover,
+.swiper-button-prev:hover,
+.swiper-button-next:active,
+.swiper-button-prev:active {
+  background-color: #000;
+  background-image: url(../img/icons/next-white.svg);
 }
 .swiper-button-prev {
   -webkit-transform: rotate(180deg);
@@ -1504,10 +1513,10 @@ h3,
   height: 40px;
 }
 .market__prev {
-  left: calc(50% - 600px);
+  left: calc(50% - 500px);
 }
 .market__next {
-  right: calc(50% - 600px);
+  right: calc(50% - 500px);
 }
 .market__slider {
   width: 100%;
@@ -1590,6 +1599,15 @@ h3,
 .market__text {
   width: calc(100% - 80px);
   font-weight: 600;
+}
+.market__text span {
+  margin-left: 10px;
+  color: #27ceaa;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+}
+.market__text span.market__red {
+  color: red;
 }
 .market__number {
   margin-top: 0;
@@ -2244,6 +2262,12 @@ h3,
   }
   .swiper-button-prev {
     left: -15px;
+  }
+  .clients__prev {
+    left: 0;
+  }
+  .clients__next {
+    right: 0;
   }
   .steps__list::before {
     bottom: 130px;
