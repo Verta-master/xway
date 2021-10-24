@@ -1,4 +1,5 @@
 .clients {
+  position: relative;
   margin-bottom: 36px;
 }
 .clients__slider {
@@ -14,14 +15,15 @@
   align-items: center;
   box-sizing: border-box;
 }
-.clients__wrap {
-  position: relative;
-}
 .clients__prev {
-  left: -30px;
+  left: 30px;
 }
 .clients__next {
-  right: -30px;
+  right: 30px;
+}
+.clients__next,
+.clients__prev {
+  margin-top: 30px;
 }
 .swiper-button-next,
 .swiper-button-prev {
@@ -36,6 +38,11 @@
   
   &::after {
     display: none;
+  }
+  &:hover,
+  &:active {
+    background-color: #000;
+    background-image: url(../img/icons/next-white.svg);
   }
 }
 .swiper-button-prev {

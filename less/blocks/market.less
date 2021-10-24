@@ -40,10 +40,10 @@
   height: 40px;
 }
 .market__prev {
-  left: ~"calc(50% - 600px)";
+  left: ~"calc(50% - 500px)";
 }
 .market__next {
-  right: ~"calc(50% - 600px)";
+  right: ~"calc(50% - 500px)";
 }
 .market__slider {
   width: 100%;
@@ -111,6 +111,16 @@
 .market__text {
   width: ~"calc(100% - 80px)";
   font-weight: 600;
+  
+  span {
+    margin-left: 10px;
+    color: @green;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+  }
+  span.market__red {
+    color: red;
+  }
 }
 .market__number {
   margin-top: 0;
